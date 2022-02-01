@@ -1,0 +1,126 @@
+.panier{
+    min-height: 400px;
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    background-color: #1b1b1f;
+    opacity: 0.9;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+
+.panier h2{
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    padding: 2% 0 1% 3%;
+    font-size: 250%;
+    color: white;
+}
+
+#accueil{
+    width: 30%;
+    padding: 1%;
+    margin-left: 26.5%;
+}
+
+#accueil a{
+    float: right;
+    background: none;
+    border: 2px solid #ffffff;
+    color: white;
+    padding: 5px 1%;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#panier-voyage{
+    width: 100%;
+    padding: 1% 0 1% 3%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.voyage{
+    width: 80%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 150%;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+.voyage:hover{
+    cursor: pointer;
+
+}
+
+.nom-ville{
+    width: 20%;
+}
+
+.dateD{
+    width: 25%;
+}
+
+.dateR{
+    width: 25%;
+}
+
+.prix{
+    width: 18%;
+    text-align: center;
+}
+
+.numéro-résa{
+    width: 15%;
+    text-align: center;
+}
+
+.date{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    height: 100%;
+    font-size: 100%;
+}
+
+.date:hover{
+    cursor: pointer;
+}
+
+#prixtot{
+    width: 30%;
+    color: white;
+    border: 2px solid white;
+    font-size: 175%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.del-checkbox{
+    width: 30px;
+    margin-left: 7%;
+    margin-bottom: 25px;
+}
+
+.panier h2 i{
+    margin-left: 66%;
+}
