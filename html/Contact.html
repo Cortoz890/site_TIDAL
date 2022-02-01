@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+        <meta charset="UTF-8">
+        <title>DandF</title>
+    </head>
+
+    <body id="body" onload="EstConnecté()">
+        <header>
+            <h1>
+                <img class="erable" src="../images/erable.svg">
+                <div class="titre">DANDF</div>
+            
+            </h1>
+            <nav>
+                <a class="bandeau" href="../index.html">Accueil</a>
+                <a class="bandeau" href="Panier.html">Panier</a>
+                <a class="bandeau-courant" href="Contact.html">Contact</a>
+                <a class="bandeau" href="Compte.html">Compte</a>
+                <div id="compte" onclick="deconnection()"><i class="fas fa-user-slash"></i></div>
+            </nav>
+            <div id="barre-recherche"> <!--Recheche d'un voyage-->
+                <input id="barre" type="search" placeholder="Rechercher une destination">
+                <img id ="loupe" src="../images/loupe.png" onclick="search()"></i>
+            </div>
+
+        </header>
+
+        </div>
+        <div id="container"> <!--Différentes façons de contacter l'agence-->
+            <div id="contact">
+                <h2>Pour nous contacter, c'est simple !</h2>
+
+                <div id="tel">
+                    <img class="contactimg" src="../images/tel.png">
+                    <a class="text" href="tel:0472431700">04 72 43 17 00 </a>
+                </div>
+
+                <div id="adresse">
+                    <img class="contactimg" src="../images/adresse.png">
+                    <address class="text_adresse">
+            
+                        CPE Lyon <br/>
+                        43, Boulevard du 11 novembre 1918 <br/>
+                        69100 VILLEURBANNE
+
+                    </address>
+                </div>
+
+                <div id="mail">
+                    <img class="contactimg" src="../images/mail.png">
+                    <a class="text" href="mailto:Agence.DandF@gmail.com?subject=Demande de renseignements&body=Bonjour, je souhaiterais obtenir des renseignements sur">
+                        Envoyez nous un mail !
+                    </a>
+                </div>
+
+                <div id="réseaux">
+                    <img class="contactimg" src="../images/réseaux.png">
+                    <a href="#" class="bulle_contact"><img class="logo" src="../images/fb.svg"></a>
+                    <a href="#" class="bulle_contact"><img class="logo" src="../images/insta.svg"></a>
+                    <a href="#" class="bulle_contact"><img class="logot" src="../images/tw.png"></a>
+                    <a href="#" class="bulle_contact"><img class="logo" src="../images/yt.svg"></a>
+                    <a href="#" class="bulle-in-contact" ><img class="logo-in" src="../images/IN.png"></a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        
+    
+        <footer>
+            <div class="text-footer">© 2020 DandF, Inc.</div>
+            <div class="text-footer">Conditions d’utilisation</div>
+            <div class="text-footer">Politique de confidentialité</div>
+            <div class="text-footer">Mentions légales</div>
+            <a href="#" class="bulle-1"><img class="logo" src="../images/fb.svg"></a>
+            <a href="#" class="bulle"><img class="logo" src="../images/insta.svg"></a>
+            <a href="#" class="bulle"><img class="logot" src="../images/tw.png"></a>
+            <a href="#" class="bulle"><img class="logo" src="../images/yt.svg"></a>
+            <a href="#" class="bulle-in" ><img class="logo-in" src="../images/IN.png"></a>
+        </footer>
+
+        <a class="gotopbtn" href="#" ><img class="logo" src="../images/scroll.svg"></a>
+        
+        <script src="../javascript/script.js"></script>
+
+    </body>
+</html>

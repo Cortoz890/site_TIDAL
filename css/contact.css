@@ -1,0 +1,103 @@
+#contact{
+    height: 100%;
+    width: 80%;
+    margin: 2% auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: #1b1b1f;
+    opacity: 0.9;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+
+}
+
+.contactimg{
+    width: 100px;
+}
+.text_adresse{
+    padding: 5%;
+    font-size: 125%;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.text{
+    padding: 5%;
+    font-size: 150%;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#contact h2{
+    width: 100%;
+    padding: 1% 3%;
+    font-family: sans-serif;
+    font-size: 250%;
+    color: white;
+
+}
+
+#tel{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    margin-left: 8%;
+}
+
+#adresse{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    margin-left: 8%;
+
+}
+
+#mail{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    margin-bottom: 50px;
+    margin-left: 8%;
+    margin-top: 50px;
+}
+
+#réseaux{
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 8%;
+}
+
+.bulle_contact{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    background-color: white;
+}
+
+.bulle-in-contact{
+    width: 40px;
+    height: 40px;
+    border: 1px white;
+    margin-left: 5%;
+}
