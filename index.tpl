@@ -47,6 +47,12 @@
 
             </div>
 
+            <div>
+                Hello {$name} smarty
+
+
+            </div>
+
         </div>
 
         <footer>
