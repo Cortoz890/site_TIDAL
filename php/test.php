@@ -1,3 +1,8 @@
 <?php
+require_once('../smarty/libs/Smarty.class.php');
+
+$smarty = new Smarty();
 $var1 = "patho";
-require_once '../html/Patho.html';
+
+$smarty->assign('name',$var1);
+$smarty->display('index.tpl');
