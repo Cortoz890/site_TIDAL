@@ -1,4 +1,5 @@
 <?php
-$var1 = "patho";
-$var2 = "patho2"
-require_once '../html/Patho.html';
+require_once 'smarty-3.1.44/libs/Smarty.class.php';
+$smarty = new Smarty();
+//$smarty->assign('name',$mon_nom);
+//$smarty->dispaly('../html/Patho.html');
