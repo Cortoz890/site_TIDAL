@@ -14,10 +14,10 @@
                 <div class="titre">Acuponcture</div>
             </h1>
             <nav>
-                <a class="bandeau" href="../index.html">Accueil</a>
-                <a class="bandeau" href="Patho.html">Pathologies</a>
-                <a class="bandeau" href="Contact.html">Contact</a>
-                <a class="bandeau" href="Compte.html">Compte</a>
+                <a class="bandeau" href="index.tpl">Accueil</a>
+                <a class="bandeau" href="Patho.tpl">Pathologies</a>
+                <a class="bandeau" href="Contact.tpl">Contact</a>
+                <a class="bandeau" href="Compte.tpl">Compte</a>
                 <div id="compte" onclick="deconnection()"><i class="fas fa-user-slash"></i></div>
             </nav>
             <div id="barre-recherche"> <!--Recheche d'un voyage-->

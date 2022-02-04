@@ -7,7 +7,6 @@ $smarty->setCompileDir('/var/www/html/template_c');
 $smarty->setConfigDir('/var/www/html/configs');
 $smarty->setCacheDir('/var/www/html/cache');
 
-$var1 = "patho";
-
-$smarty->assign('name',$var1);
-$smarty->display('index.tpl');
+$smarty->display('nav.tpl');
+$smarty->display('Patho.tpl');
+$smarty->display('footer.tpl');
