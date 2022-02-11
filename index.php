@@ -8,6 +8,5 @@ $smarty->setCompileDir('/var/www/html/template_c');
 $smarty->setConfigDir('/var/www/html/configs');
 $smarty->setCacheDir('/var/www/html/cache');
 
-$smarty->display('nav.tpl');
 $smarty->display('index.tpl');
 $smarty->display('footer.tpl');
