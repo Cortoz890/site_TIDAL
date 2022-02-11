@@ -15,7 +15,9 @@ try{
     echo $e->getCode() . ' ' . $e->getMessage();
 }
 
-$sql = 'SELECT * FROM maTable WHERE monChamp = :maVar';
+$sql = 'SELECT * FROM patho WHERE mer = :maVar';
 $sth = $dbh->prepare($sql);
-$sth->execute(array(':maVar' => "vraie valeur"));
+$sth->execute(array(':maVar' => 'P'));
 $data = $sth->fetchAll();
+
+var_dump($data);
