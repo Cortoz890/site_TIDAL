@@ -15,7 +15,7 @@
 
         <nav>
 
-        <a class="bandeau-courant" href="index.php">Accueil</a>
+        <a class="bandeau-courant" href="../index.php">Accueil</a>
         <a class="bandeau" href="patho.php">Pathologies</a>
         <a class="bandeau" href="contact.php">Contact</a>
         <a class="bandeau" href="compte.php">Compte</a>

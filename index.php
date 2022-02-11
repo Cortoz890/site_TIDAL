@@ -1,6 +1,6 @@
 <?php
-require('connect.php');
-require_once('../smarty/libs/Smarty.class.php');
+require('php/connect.php');
+require_once('smarty/libs/Smarty.class.php');
 
 $smarty = new Smarty();
 $smarty->setTemplateDir('/var/www/html/template');
