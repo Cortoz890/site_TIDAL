@@ -8,6 +8,6 @@ $smarty->setConfigDir('/var/www/html/configs');
 $smarty->setCacheDir('/var/www/html/cache');
 
 $smarty->display('nav.tpl');
-require('connect.php');
 $smarty->display('Patho.tpl');
+require('connect.php');
 $smarty->display('footer.tpl');

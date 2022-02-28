@@ -20,7 +20,7 @@ try{
 // $sth->execute(array(':maVar' => 'P'));
 // $data = $sth->fetchAll();
 
-$sql = "SELECT t1.code as code, t1.nom as meridien, t4.desc as symptome, t2.desc as pathologie, t2.type as type FROM public.meridien t1 
+$sql = "SELECT t1.nom as meridien, t4.desc as symptome, t2.desc as pathologie FROM public.meridien t1 
     INNER JOIN public.patho t2  ON t1.code = t2.mer INNER JOIN public.symptPatho t3 ON t2.idP = t3.idP INNER JOIN public.symptome t4 ON t3.idS=t4.idS ";
 
 $dbh->beginTransaction();
@@ -29,8 +29,8 @@ $pathos_meridiens->execute();
 $pathos_meridiens_data = $pathos_meridiens->fetchAll();
 $dbh->commit();
 ?>
-<div class="patho">
-
+<div class="container">
+<div class="affichage">
 <?php
 foreach ($pathos_meridiens_data as $nom_meridien) {
     ?>
@@ -42,3 +42,5 @@ foreach ($pathos_meridiens_data as $nom_meridien) {
 <?php
 }
 ?>
+</div>
+</div>

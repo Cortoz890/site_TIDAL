@@ -1,18 +1,28 @@
-.panier{
-    min-height: 400px;
-    width: 80%;
-    margin: 5% auto;
+.container{
+    width: 100%;
     display: flex;
     flex-flow: wrap;
-    align-items: flex-start;
-    background-color: #1b1b1f;
-    opacity: 0.9;
+    justify-content: center;
+}
+
+.affichage {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.patho {
+    width: 350px;
+    height: 237px;
     border-radius: 10px;
+    margin: 10px 20px 20px 20px;
+    opacity: 0.9;
     border: 2px solid #ffffff;
+    background-color: #1b1b1f;
+    color: white;
 }
 
-.patho{
-
-
-    
-}
