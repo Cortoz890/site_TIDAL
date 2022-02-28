@@ -10,15 +10,15 @@
                 <h2>Connexion</h2>
                 <div class="textbox">
                   <i class="fas fa-user"></i>
-                  <input id="nom-utilisateur" type="text" placeholder="Nom d'utilisateur" required>
+                  <input id="nom-utilisateur" type="text" placeholder="Nom d'utilisateur" required name="user">
                 </div>
             
                 <div class="textbox">
                   <i class="fas fa-lock"></i>
-                  <input id="mdp" type="password" placeholder="Mot de passe" required>
+                  <input id="mdp" type="password" placeholder="Mot de passe" required name="pass">
                 </div>
             
-                <input type="submit" id="btn" value="Se connecter">
+                <input type="submit" id="btn" value="Se connecter" name="submit">
                 <input type="button" id="btn2" value="Creer un compte">
 
             </form>
