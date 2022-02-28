@@ -24,18 +24,30 @@ try{
     echo $e->getCode() . ' ' . $e->getMessage();
 }
 
-if (isset($_GET['submit'])){
-    $user = $_GET['user'];
-    $pass = $_GET['pass'];
-
-    echo "<script> console.log(\" Mot de passe rentré: $pass, user rentré: $user\") </script>";
-}
-/*
-$sql = 'SELECT * FROM users WHERE username = :maVar';
+$sql = 'SELECT * FROM users ';
 $sth = $dbh->prepare($sql);
-$sth->execute(array(':maVar' => 'Jeanne'));
-$data = $sth->fetchAll();
-*/
+$sth->execute();
+$comptes = $sth->fetchAll();
+
+if (isset($_GET['submit'])){
+    $user_form = $_GET['user'];
+    $pass_form = $_GET['pass'];
+    
+    foreach ($comptes as $compte)
+    {
+        if($comptes['username'] == $user_form && $comptes['pass'] == $pass_form)
+        {
+            echo "<script> console.log(\"Connexion réussie\") </script>";
+        }
+
+        else
+        {
+            echo "<script> console.log(\"Connexion échouée\")  </script>";
+        }
+    }
+    
+    
+}
 
 
 $smarty->display('Compte.tpl');
