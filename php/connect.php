@@ -20,4 +20,3 @@ $sth = $dbh->prepare($sql);
 $sth->execute(array(':maVar' => 'P'));
 $data = $sth->fetchAll();
 
-var_dump($data);
