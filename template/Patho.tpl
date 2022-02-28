@@ -5,6 +5,17 @@
     </head>
 
     <body id="body">
+    <div class="result" id="result_rch_avance">
+        <?php foreach ($queryResult as $each_result) { ?>
+            <a href="#">
+                <div class="patho">
+                    <h4>Pathologie : <?= $each_result['pathologie']; ?></h4>
+                    <p>Méridien : <?= $each_result['meridien']; ?></p>
+                    <p>Symptome : <?= $each_result['symptome']; ?></p>
+                </div>
+            </a>
+        <?php } ?>
+    </div>
         <div class="panier">
             <h2>Pathologies : <i class="far fa-trash-alt"></i></h2>
             <div id="panier-voyage">
