@@ -24,8 +24,20 @@
         </nav>
 
         <div id="barre-recherche"> 
-            <input id="barre" type="search" placeholder="Quels sont vos symptômes?">
+        <?php
+            if($connexion)
+            {
+        ?>      <input id="barre" type="search" placeholder="Quels sont vos symptômes?">
+        <?php
+            }
+            else
+            {
+        ?>   <input disabled="" id="barre" type="search" placeholder="Quels sont vos symptômes?">
+        <?php     
+            }
+        ?>    
             <img id ="loupe" src="../images/loupe.png"></i>
         </div>
     </header> 
 </body>
+

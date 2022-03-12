@@ -381,7 +381,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      *
      * @var bool
      */
-    public $allow_php_templates = false;
+    public $allow_php_templates = true;
 
     /**
      * debug mode
