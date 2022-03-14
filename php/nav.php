@@ -24,19 +24,24 @@
         </nav>
 
         <div id="barre-recherche"> 
-        <?php
-            if($connexion)
-            {
-        ?>      <input id="barre" type="search" placeholder="Quels sont vos symptômes?">
-        <?php
-            }
-            else
-            {
-        ?>   <input disabled="" id="barre" type="search" placeholder="Quels sont vos symptômes?">
-        <?php     
-            }
-        ?>    
-            <img id ="loupe" src="../images/loupe.png"></i>
+            <form id="barre-recherche">
+
+            <?php
+                if($connexion)
+                {
+                    echo '<script> console.log(\"Recherche en cours\") </script>';
+            ?>      <input id="barre" type="search" placeholder="Quels sont vos symptômes?" name="terme">
+            <?php
+                }
+                else
+                {
+            ?>   <input disabled="" id="barre" type="search" placeholder="Quels sont vos symptômes?" name="terme">
+            <?php     
+                }
+            ?>    
+                <input type="submit" id="btn_search" value="Rechercher" name="s">
+                <img id ="loupe" src="../images/loupe.png   "></i>
+            </form>
         </div>
     </header> 
 </body>

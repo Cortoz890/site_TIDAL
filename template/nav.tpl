@@ -24,8 +24,11 @@
         </nav>
 
         <div id="barre-recherche"> 
-            <input id="barre" type="search" placeholder="Quels sont vos symptômes?">
-            <img id ="loupe" src="../images/loupe.png"></i>
+            <form id="barre-recherche">
+                <input id="barre2" type="search" placeholder="Quels sont vos symptômes?" name="terme">
+                <input type="submit" id="btn_search" value="Rechercher" name="s">
+                <img id ="loupe" src="../images/loupe.png"></i>
+            </form>
         </div>
     </header> 
 </body>
