@@ -48,6 +48,16 @@ else
     echo "<script> console.log(\"Connexion échouée\") </script>";
 }
 
+if(!empty($_COOKIE["connect_or_not"]))
+    {
+        echo "<script> console.log(\"Connexion réussie \") </script>";
+    }
+
+else
+{
+    echo "<script> console.log(\"Connexion échouée \") </script>";
+}
+
 $sql2 = 'SELECT * FROM keywords';
 $sth2 = $dbh->prepare($sql2);
 $sth2->execute();
@@ -120,14 +130,4 @@ if(isset($_GET["s"])){
             }
         }
     }
-}
-
-if(!empty($_COOKIE["connect_or_not"]))
-    {
-        echo "<script> console.log(\"Connexion réussie \") </script>";
-    }
-
-else
-{
-    echo "<script> console.log(\"Connexion échouée \") </script>";
 }

@@ -35,27 +35,33 @@
         <a class="bandeau" href="contact.php">Contact</a>
         <a class="bandeau" href="compte.php">Compte</a>
 
-        <?php } 
-            if(!empty($_COOKIE["connect_or_not"]))
-            {
-        ?>  
+        </nav>
         <div id="compte"><i class="fas fa-user"></i></div>
-        </nav>
-        <div id="barre-recherche">        
-            <input id="barre" type="search" placeholder="Quels sont vos symptômes?">
-        <?php
-            }
-            else
-            {
-        ?> 
-        <div id="compte"><i class="fas fa-user-slash"></i></div>
-        </nav>
-        <div id="barre-recherche">   
-            <input disabled="" id="barre" type="search" placeholder="Quels sont vos symptômes?">
-        <?php     
-            }
-        ?>    
-            <img id ="loupe" src="../images/loupe.png"></i>
+        <div id="barre-recherche"> 
+            <form id="barre-recherche">
+            
+            <?php } 
+                if(!empty($_COOKIE["connect_or_not"]))
+                {
+            ?>  
+            <!--<div id="compte"><i class="fas fa-user"></i></div>
+            <div id="barre-recherche">        -->
+                <input id="barre" type="search" placeholder="Quels sont vos symptômes?" name="terme">
+            <?php
+                }
+                else
+                {
+            ?> 
+            <!--<div id="compte"><i class="fas fa-user-slash"></i></div>
+            </nav>
+            <div id="barre-recherche">   -->
+                <input disabled="" id="barre" type="search" placeholder="Quels sont vos symptômes?" name="terme">
+            <?php     
+                }
+            ?>    
+                <input type="submit" id="btn_search" value="Rechercher" name="s">
+                <img id ="loupe" src="../images/loupe.png"></i>
+            </form>
         </div>
     </header> 
 </body>
