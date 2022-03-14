@@ -26,8 +26,6 @@ $sth = $dbh->prepare($sql);
 $sth->execute();
 $comptes = $sth->fetchAll();
 
-$connexion = false;
-
 if (isset($_GET['submit'])){
     $user_form = $_GET['user'];
     $pass_form = $_GET['pass'];
@@ -35,7 +33,9 @@ if (isset($_GET['submit'])){
     {
         if($compte['username'] == $user_form && $compte['pass'] == $pass_form)
         {
-            $connexion = true;
+            $connexion = $compte['username'];
+            setcookie("connect_or_not", $connexion, time() + (60*60), "/");
+            header("Refresh:0; url=../index.php");
         }
     }
 }
@@ -120,4 +120,14 @@ if(isset($_GET["s"])){
             }
         }
     }
+}
+
+if(!empty($_COOKIE["connect_or_not"]))
+    {
+        echo "<script> console.log(\"Connexion réussie \") </script>";
+    }
+
+else
+{
+    echo "<script> console.log(\"Connexion échouée \") </script>";
 }
