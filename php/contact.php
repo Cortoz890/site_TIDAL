@@ -10,6 +10,3 @@ $smarty->setCacheDir('/var/www/html/cache');
 require("nav.php");
 $smarty->display('Contact.tpl');
 $smarty->display('footer.tpl');
-
-$test = $_COOKIE["connect_or_not"];
-echo "<script> console.log(\"Coockie: $test \") </script>";

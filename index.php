@@ -7,5 +7,7 @@ $smarty->setCompileDir('/var/www/html/template_c');
 $smarty->setConfigDir('/var/www/html/configs');
 $smarty->setCacheDir('/var/www/html/cache');
 
-require("php/nav.php");
+$smarty->display('index.tpl');
+require('./php/nav.php');
+require('./php/connect.php');
 $smarty->display('footer.tpl');

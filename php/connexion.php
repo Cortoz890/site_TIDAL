@@ -17,6 +17,9 @@ $source_bd = "pgsql:host=$serveur_bd;port=5432;dbname=$nom_bd;user=$utilisateur_
 
 try{
     $dbh = new PDO($source_bd);
+    if($dbh){
+        echo "<script> console.log(\"Connection à la BDD $nom_bd réussi\") </script>";
+    }
 }catch (PDOException $e){ // Génération d'une exception PHP PDO PostgreSQL
     echo $e->getCode() . ' ' . $e->getMessage();
 }
@@ -38,14 +41,6 @@ if (isset($_GET['submit'])){
             header("Refresh:0; url=../index.php");
         }
     }
-}
-if($connexion)
-{
-    echo "<script> console.log(\"Connexion réussie\") </script>";
-}
-else
-{
-    echo "<script> console.log(\"Connexion échouée\") </script>";
 }
 
 if(!empty($_COOKIE["connect_or_not"]))

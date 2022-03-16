@@ -12,4 +12,5 @@
     </footer>
 
     <a class="gotopbtn" href="#" ><img class="logo" src="../images/scroll.svg"></a>
+    <script src="../javascript/script.js"></script>
 </body>
