@@ -10,5 +10,5 @@ $smarty->setCacheDir('/var/www/html/cache');
 $smarty->display('index.tpl');
 require('./php/nav.php');
 require('./php/recherche.php');
-require('./php/connect.php');
+require('./php/bdd.php');
 $smarty->display('footer.tpl');

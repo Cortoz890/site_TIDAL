@@ -20,7 +20,7 @@ if (isset($_GET['deconnexion'])) {
 
         <nav>
             <a class="bandeau-courant" href="../index.php">Accueil</a>
-            <a class="bandeau" href="/php/patho.php">Pathologies</a>
+            <a class="bandeau" href="/php/patho.php">Recherche</a>
             <a class="bandeau" href="/php/contact.php">Contact</a>
             <a class="bandeau" href="/php/compte.php">Compte</a>
             
@@ -29,7 +29,7 @@ if (isset($_GET['deconnexion'])) {
             { ?>
         <nav>
             <a class="bandeau" href="../index.php">Accueil</a>
-            <a class="bandeau-courant" href="patho.php">Pathologies</a>
+            <a class="bandeau-courant" href="patho.php">Recherche</a>
             <a class="bandeau" href="contact.php">Contact</a>
             <a class="bandeau" href="compte.php">Compte</a>
 
@@ -38,7 +38,7 @@ if (isset($_GET['deconnexion'])) {
             { ?>
         <nav>
             <a class="bandeau" href="../index.php">Accueil</a>
-            <a class="bandeau" href="patho.php">Pathologies</a>
+            <a class="bandeau" href="patho.php">Recherche</a>
             <a class="bandeau-courant" href="contact.php">Contact</a>
             <a class="bandeau" href="compte.php">Compte</a>
             
@@ -47,7 +47,7 @@ if (isset($_GET['deconnexion'])) {
             { ?>
         <nav>
             <a class="bandeau" href="../index.php">Accueil</a>
-            <a class="bandeau" href="patho.php">Pathologies</a>
+            <a class="bandeau" href="patho.php">Recherche</a>
             <a class="bandeau" href="contact.php">Contact</a>
             <a class="bandeau-courant" href="compte.php">Compte</a>
 

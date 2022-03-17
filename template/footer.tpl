@@ -1,6 +1,6 @@
 <body id="body">
     <footer>
-        <div class="text-footer">© 2020 Acuponcture, Inc.</div>
+        <div class="text-footer">© 2022 Acuponcture, Inc.</div>
         <div class="text-footer">Conditions d’utilisation</div>
         <div class="text-footer">Politique de confidentialité</div>
         <div class="text-footer">Mentions légales</div>

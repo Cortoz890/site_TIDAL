@@ -14,21 +14,22 @@ try{
 }catch (PDOException $e){ // Génération d'une exception PHP PDO PostgreSQL
     echo $e->getCode() . ' ' . $e->getMessage();
 }
+?>
+<div class="container">
+<div class="affichage">
+<?php
 
 $sql = "SELECT t1.nom as meridien, t4.desc2 as symptome, t2.desc as pathologie FROM public.meridien t1 
-    INNER JOIN public.patho t2  ON t1.code = t2.mer INNER JOIN public.symptPatho t3 ON t2.idP = t3.idP 
-    INNER JOIN public.symptome t4 ON t3.idS=t4.idS INNER JOIN public.keySympt t5 ON t4.idS=t5.idS 
-    INNER JOIN public.keywords t6 ON t5.idK=t6.idK";
+INNER JOIN public.patho t2  ON t1.code = t2.mer INNER JOIN public.symptPatho t3 ON t2.idP = t3.idP 
+INNER JOIN public.symptome t4 ON t3.idS=t4.idS INNER JOIN public.keySympt t5 ON t4.idS=t5.idS 
+INNER JOIN public.keywords t6 ON t5.idK=t6.idK";
 
 $dbh->beginTransaction();
 $pathos_meridiens = $dbh->prepare($sql);
 $pathos_meridiens->execute();
 $pathos_meridiens_data = $pathos_meridiens->fetchAll();
 $dbh->commit();
-?>
-<div class="container">
-<div class="affichage">
-<?php
+
 foreach ($pathos_meridiens_data as $nom_meridien) {
     ?>
         <div class="patho">

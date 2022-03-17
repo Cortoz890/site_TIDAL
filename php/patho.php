@@ -11,5 +11,6 @@ $smarty->setCacheDir('/var/www/html/cache');
 
 $smarty->display('Patho.tpl');
 require('nav.php');
+require('filtre.php');
 require('recherche.php');
 $smarty->display('footer.tpl');

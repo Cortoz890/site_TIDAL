@@ -47,7 +47,6 @@ if ( isset($_POST['terme']) && $_SERVER['PHP_SELF'] = "/php/patho.php" or (isset
     <div class="container">
     <div class="affichage">
 <?php
-    echo "<script> console.log(\"Recherche de $research en cours\") </script>";
     foreach ($datas as $data){
         if ($data['name'] == $research){?>
             <div class="patho">
@@ -62,4 +61,5 @@ if ( isset($_POST['terme']) && $_SERVER['PHP_SELF'] = "/php/patho.php" or (isset
 </div>
 <?php
 }
+
 
