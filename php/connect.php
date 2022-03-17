@@ -15,8 +15,10 @@ try{
     echo $e->getCode() . ' ' . $e->getMessage();
 }
 
-$sql = "SELECT t1.nom as meridien, t4.desc as symptome, t2.desc as pathologie FROM public.meridien t1 
-    INNER JOIN public.patho t2  ON t1.code = t2.mer INNER JOIN public.symptPatho t3 ON t2.idP = t3.idP INNER JOIN public.symptome t4 ON t3.idS=t4.idS ";
+$sql = "SELECT t1.nom as meridien, t4.desc2 as symptome, t2.desc as pathologie FROM public.meridien t1 
+    INNER JOIN public.patho t2  ON t1.code = t2.mer INNER JOIN public.symptPatho t3 ON t2.idP = t3.idP 
+    INNER JOIN public.symptome t4 ON t3.idS=t4.idS INNER JOIN public.keySympt t5 ON t4.idS=t5.idS 
+    INNER JOIN public.keywords t6 ON t5.idK=t6.idK";
 
 $dbh->beginTransaction();
 $pathos_meridiens = $dbh->prepare($sql);

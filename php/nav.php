@@ -3,8 +3,13 @@ $page = $_SERVER['PHP_SELF'];
 if (isset($_GET['deconnexion'])) {
     setcookie("connect_or_not");
     echo "<script> console.log(\"Deconnexion\") </script>";
-    header("Refresh:0; url=$page");
+    header("Refresh:0; url=/");
 }
+
+if (isset($_POST['terme']) && $page != "/php/patho.php") {
+    header("Refresh:0; url=/php/patho.php");
+}
+
 ?>
 <body id="body">
     <header>
@@ -65,12 +70,15 @@ if (isset($_GET['deconnexion'])) {
             <?php
             if(!empty($_COOKIE["connect_or_not"]))
                 {?>  
-                <input id="barre" type="search" placeholder="Quels sont vos symptomes ?" name="terme">
+                <form id="form_barre" method="post">
+                    <input id="input_barre" name="terme" type="search" placeholder="Quels sont vos symptomes ?">
+                </form>
                 <img id ="loupe" src="../images/loupe.png"></i>
-
             <?php }
             else {?>
-                <input id="barre" type="search" placeholder="Connectez-vous" name="terme" disabled>
+                <form id="form_barre" method="post">
+                    <input id="input_barre" name="terme" type="search" placeholder="Connectez-vous !" disabled>
+                </form>
                 <img id ="loupe" src="../images/loupe.png"></i>
             <?php } ?>
         </div>
