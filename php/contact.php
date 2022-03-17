@@ -10,3 +10,4 @@ $smarty->setCacheDir('/var/www/html/cache');
 require("nav.php");
 $smarty->display('Contact.tpl');
 $smarty->display('footer.tpl');
+require('recherche.php');

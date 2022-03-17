@@ -6,10 +6,6 @@ if (isset($_GET['deconnexion'])) {
     header("Refresh:0; url=/");
 }
 
-if (isset($_POST['terme']) && $page != "/php/patho.php") {
-    header("Refresh:0; url=/php/patho.php");
-}
-
 ?>
 <body id="body">
     <header>

@@ -29,26 +29,37 @@ $pathos_meridiens = $dbh->prepare($sql);
 $pathos_meridiens->execute();
 $datas = $pathos_meridiens->fetchAll();
 $dbh->commit();
-?>
 
-<div class="container">
-<div class="affichage">
-<?php
-if (isset($_POST['terme'])) {
+if (isset($_POST['terme']) && $_SERVER['PHP_SELF'] != "/php/patho.php" ) {
     $research=$_POST['terme'];
+    header("Refresh:0; url=/php/patho.php?terme=$research");
+}
+
+if ( isset($_POST['terme']) && $_SERVER['PHP_SELF'] = "/php/patho.php" or (isset($_GET['terme'])) ) {
+    if (isset($_GET['terme'])){
+        $research=$_GET['terme'];
+    }
+    else {
+        $research=$_POST['terme'];
+    }
+
+?>
+    <div class="container">
+    <div class="affichage">
+<?php
     echo "<script> console.log(\"Recherche de $research en cours\") </script>";
     foreach ($datas as $data){
-        #var_dump($data);
-        if ($data['name'] == $research){
-            ?>
+        if ($data['name'] == $research){?>
             <div class="patho">
                 <h4>Pathologie : <?= $data['desc']; ?></h4>
                 <p>Méridien : <?= $data['nom']; ?></p>
                 <p>Symptome : <?= $data['desc2']; ?></p>
             </div>
-        
+    
 <?php
-}}}
-?>
+}}?>
 </div>
 </div>
+<?php
+}
+

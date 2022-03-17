@@ -12,4 +12,4 @@ require("nav.php");
 $smarty->display('Compte.tpl');
 require("connexion.php");
 $smarty->display('footer.tpl');
-?>
+require('recherche.php');
